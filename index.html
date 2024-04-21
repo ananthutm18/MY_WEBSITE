@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35db9f45ce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <img src="images/logo.png" class="logo">
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closenav()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="shownav()"></i>
+
+            </nav>
+            <div class="header-body">
+                <p>Software Developer|MERN STACK|Python-Django</p>
+                <h1>HI I AM ,<span>ANANTHU TM</span> <br> a Software Developer</h1>
+            </div>
+
+        </div>
+
+    </div>
+  
+   <!-- --------------------------About------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutColumn1">
+                    <img src="images/aboutProf.png" class="abot-image" width="430px">
+                </div>
+                <div class="aboutColumn2">
+                    <h1 class="SubTitle">About me</h1>
+                    <p>
+                       I am a  Passionate software developer with a tactical approach who is also strategic and looks forward. 
+                       Highly driven to provide value to the organization by maximizing the use of technical, problem-solving, 
+                       and management abilities while working in a Software development professional setting of a growing company.
+                    </p>
+                    <div class="about-titles">
+                        <p class="tabList  activeList" onclick="aboutList('skills')">Skills</p>
+                        <p class="tabList" onclick="aboutList('education')">Education</p>
+                        <p class="tabList" onclick="aboutList('experience')">Experience</p>
+                    </div>
+                     <!-- ----------------------SKILLS------------------------ -->
+                    <div class="about-contents active-content" id="skills">
+                        <ul>
+                            <li><span>Web App Development</span><br>Develop Web Applications by using MERN stack and Python-Django</li>
+                            <li><span>Static Website Development</span><br>Design and development of interactive static websites using HTML, CSS and JavaScript</script> </li>
+                            <li><span>Version Control System</span><br>Avility to work with GitHub to work as a team to develop a project </li>
+                            <li><span>Database management</span><br>Ability to construct or administer complex digital databases</li>
+                        </ul>
+                    </div>
+                     <!-- ----------------------EDUCATION------------------------ -->
+                    <div class="about-contents" id="education">
+                        <ul>
+                            <li><span>Pg Dipoloma[ Lambton College, Sarnia,Canada, 2021-2023 (3.6/4) ]</span><br>Computer Software and Database Development</li>
+                            <li><span>Bsc computer science[ Mahatma Gandhi University, Kerala, India, 2017-2020 (72/100) ]</span><br>Bachelor's degree in Computer Science</li>
+                            <li><span>Higher Secondary, Computer Science branch[ St Berchmans Higher Secondary School, 2015-2017 (82/100) ]</span><br>Higher Secondary education in computer science</li>
+                            
+                        </ul>
+                    </div>
+                    <!-- ----------------------EXPERIENCE------------------------ -->
+                    <div class="about-contents" id="experience">
+                        <ul>
+                            <li><span>Associate Web develper</span><br> Worked as a Javathon developer for RLVD, a traffic red light and stop line detection system
+                                deployed in Indian roadside subsystems.</li>
+                            <li><span>Software Developer[Internship]</span><br>Worked as a Python Developer contributing to the migration of Lambton college web application for
+                                students and employees</li>
+                            <li><span>Personal projects</span><br>Currenntly working in personal projets to enhance the skills and knowledge</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------SERVICES----------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="SubTitle">My Services</h1>
+            <div class="servic-list">
+                    <div class="service-box" id="web-id">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web App development</h2>
+                        <p>Selecting our web development service is the first step in an endeavor 
+                            that goes beyond learning how to code: it's about creating a digital identity 
+                            that connects with your target market and helps you stand out in the crowded online market. 
+                            Let's make your online idea a reality!
+                        </p>
+                        <p id="web" class="service">Understanding your objectives, 
+                            target market, and operational procedures is the first step in 
+                            our collaborative approach to building a web solution that goes
+                             beyond simple design. In order to improve user engagement and conversion rates, 
+                            we work hard to deliver an intuitive user experience by utilizing the most recent industry
+                             trends and best practices.
+                        </p>
+                        <p  id ="webDic" class="service-more" onclick="aboutService('web','web-id','webDic')">Read more</p>
+                    </div>
+                    <div class="service-box" id="app-id">
+                        <i class="fa-brands fa-google-play"></i>
+                        <h2>Static Website Development</h2>
+                        <p >
+                            With the help of our static website building service, 
+                            embrace the power of simplicity. Allow us to assist you in building a 
+                            powerful online presence that not only 
+                            accurately portrays your business but also makes sure that visitors to your
+                             website have a pleasurable experience.
+                        </p>
+                        <p id="app" class="service">Our static websites load quickly thanks 
+                            to our dedication to simple design and optimum performance, giving your 
+                            audience a seamless and enjoyable surfing experience. We strive to make your
+                             website aesthetically pleasing and user-friendly from the moment people land on 
+                             it since we know that first impressions count.
+                            
+                        </p>
+                        <p id ="appDic" class="service-more" onclick="aboutService('app','app-id','appDic')">Read more</p>
+                    </div>
+                    <div class="service-box" id="video-id">
+                        <i class="fa-solid fa-video"></i>
+                        <h2>Video Editing</h2>
+                        <p>Our specialty is creating smooth, well-produced videos that captivate your viewers.
+
+                            Our committed staff of video editors is aware of 
+                            the significance of properly communicating your message as well as the craft of storytelling. 
+                            We carefully edit every frame, whether it's for a personal project, 
+                            instructional film, or commercial video, to improve the overall story and draw in viewers.
+                        </p>
+                        <p id="video" class="service">Select our service for a flawless video editing
+                             process that turns your unpolished footage into a polished work of art. 
+                            Allow us to improve your content so that it sticks out in the crowded online space.
+                        </p>
+                        <p  id ="videoDic" class="service-more" onclick="aboutService('video','video-id','videoDic')">Read more</p>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+<!-- -------------------------MY Portfolio------------------------ -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="SubTitle">My Works</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="workdata">
+                    <h3>Employee Data managing App</h3>
+                    <p>This is an employee managing app where the employer can create , read, edit and delete the
+                        employee data. This app is built on the MERN stack which requires MongoDB, Express.js, React.js, and
+                        Nodejs.  </p>
+                    <a href="https://github.com/ananthutm18/MERN-STACK-PROJECTS.git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="workdata">
+                    <h3>Daily task management app</h3>
+                    <p>This project is a simple app where you can create , read, edit and delete the tasks you need to do in
+                        a day. This app is built on the MERN stack which requires MongoDB, Express.js, React.js, and Nodejs.  </p>
+                    <a href="https://github.com/ananthutm18/https-github.com-ananthutm18-MERN-CRUD-APP.git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="workdata">
+                    <h3>Tic Tac Toe App</h3>
+                    <p>This is a small tic tac toe game app developed using html, css and JS  </p>
+                    <a href="https://github.com/ananthutm18/tic-tac-toe-project.git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+<!-- -----------------Contact---------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-links">
+                <h1 class="SubTitle">Contact me</h1>
+                <p><a href="mailto: ananthutm18@gmail.com"><i class="fa-solid fa-envelope"></i>ananthutm18@gmail.com</a></p>
+                <p><i class="fa-solid fa-square-phone"></i>+1 226-886-5799</p>
+                <div class="socialmedia">
+                    <a href="https://www.facebook.com/profile.php?id=100069548643560"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/ananthutm18"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://linkedin.com/in/ananthu-thundiyil-manoharan-a4b53a198"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/ATM_CV.pdf" download class="btn btn2">Download CV</a>
+                
+            </div>
+            <div class="contact-form">
+                <form name="google_form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <p id="message"></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Ananthu. Call me A_T_M <i class="fa-sharp fa-solid fa-dumbbell"></i></p>
+    </div>
+</div>
+
+
+
+
+    <script>
+        var abtLists=document.getElementsByClassName("tabList");
+        var abtContents=document.getElementsByClassName("about-contents");
+        var serviceContets=document.getElementsByClassName("service");
+        var serviceDivs=document.getElementsByClassName("service-box");
+       
+        function aboutList(abtName){
+            
+            for (abtContent of abtContents){
+                abtContent.classList.remove("active-content");
+
+            }
+            for (abtList of abtLists){
+                abtList.classList.remove("activeList");
+
+            }
+            event.currentTarget.classList.add("activeList");
+
+            document.getElementById(abtName).classList.add("active-content");
+            
+        }
+        
+        function aboutService(serviceName,divName,divDisc){
+            
+           
+            for (serviceContet of serviceContets){
+                serviceContet.classList.remove("active-service");
+
+            }
+            for (serviceDiv of serviceDivs){
+                serviceDiv.classList.remove("service-div");
+
+            }
+            
+            
+
+            document.getElementById(serviceName).classList.add("active-service");
+            document.getElementById(divName).classList.add("service-div");
+            
+
+           
+        }
+        var menu=document.getElementById("menu");
+            function shownav(){
+                
+                menu.style.right="0";
+                
+            }
+            function closenav(){
+                menu.style.right="-200px";
+
+            }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyA-VvSCNtn69cF3sJnBUEyElP78gA5j95UgAefXwJkEPaOyw_PnS-doU1MnG-E7nyJSg/exec'
+        const form = document.forms['google_form']
+        const msg=document.getElementById('message')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML="Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+    form.reset()})
+            .catch(error => console.error('Error!', error.message))
+        })
+        
+      </script>
+
+</body>
+
+</html>
